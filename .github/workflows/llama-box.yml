@@ -1,4 +1,4 @@
-name: Build and Publish LLaMA Box image
+name: LLaMA Box image
 
 on:
   workflow_dispatch:
