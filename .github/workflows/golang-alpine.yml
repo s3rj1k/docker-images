@@ -1,15 +1,16 @@
 name: Build and Publish Golang Alpine Image
 
 on:
+  workflow_dispatch:
   # push:
   #   branches:
   #     - main
   #   paths:
   #     - '.github/dockerfiles/golang/alpine/Dockerfile'
   #     - '.github/workflows/golang-alpine.yml'
-  schedule:
-    # This schedule runs at 02:00 AM UTC every day.
-    - cron: '0 2 * * *'
+  # schedule:
+  #   # This schedule runs at 02:00 AM UTC every day.
+  #   - cron: '0 2 * * *'
 
 jobs:
   build-and-push:
